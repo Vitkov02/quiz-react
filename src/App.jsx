@@ -1,4 +1,4 @@
-import './style/index.scss'; 
+import './style/style.scss'; 
 import React from 'react';
 
 const questions = [
@@ -29,7 +29,7 @@ const questions = [
         <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
         <h2>Вы отгадали {correct} ответа из {questions.length}</h2>
         <a href='/'>
-            <button>Попробовать снова</button>
+            <button>Retry</button>
         </a>
       </div>
     );
