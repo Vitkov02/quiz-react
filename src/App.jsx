@@ -3,21 +3,21 @@ import React from 'react';
 
 const questions = [
     {
-      title: 'React - это ... ?',
-      variants: ['библиотека', 'фреймворк', 'приложение'],
+      title: 'React is - ... ?',
+      variants: ['library', 'framework', 'application'],
       correct: 0,
     },
     {
-      title: 'Компонент - это ... ',
-      variants: ['приложение', 'часть приложения или страницы', 'то, что я не знаю что такое'],
+      title: 'Component - is ... ',
+      variants: ['application', 'part of an application or page', 'i dont know'],
       correct: 1,
     },
     {
-      title: 'Что такое JSX?',
+      title: ' What is JSX?',
       variants: [
-        'Это простой HTML',
-        'Это функция',
-        'Это тот же HTML, но с возможностью выполнять JS-код',
+        'simple HTML',
+        'function',
+        't  his is the same HTML, but with the ability to execute JS-code',
       ],
       correct: 2,
     },
@@ -27,7 +27,7 @@ const questions = [
     return (
       <div className="result">
         <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
-        <h2>Вы отгадали {correct} ответа из {questions.length}</h2>
+        <h2> {correct} correct answer from {questions.length}</h2>
         <a href='/'>
             <button>Retry</button>
         </a>
